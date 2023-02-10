@@ -15,22 +15,22 @@ virtual Machine is heavy weight, there will be huge usage of resources, performa
 
 #### Dockerfile
 
-#base Image
+#base Image 
 FROM node:14
 
-#work directory
+#work directory 
 WORKDIR /app
 
-#Copy pacjage.json to current path
+#Copy pacjage.json to current path 
 COPY package.json .
 
-#Run command to be executed
+#Run command to be executed 
 RUN npm install
 
-#copy remaining files from local 
+#copy remaining files from local  
 COPY . .
 
-#expose port 300- to outside world
+#expose port 300- to outside world 
 EXPOSE 3000
 
 // cammand to start the server
